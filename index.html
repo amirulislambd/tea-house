@@ -28,6 +28,23 @@
     <title>Document</title>
   </head>
   <body>
+<!-- Navbar -->
+ <nav id="home-1" class="flex justify-between items-center container mx-auto">
+  <span class="mt-4 text-5xl bg-linear-to-r from-[#FF8938] to-[#FF0000] bg-clip-text text-transparent"><i class="fa-solid fa-hand-holding-hand"></i></span>
+  <div class="hidden md:block">
+    <ul class="flex gap-4">
+      <li class="px-2 py-1 cursor-pointer hover:text-white hover:bg-blue-500 rounded-"><a href="#home">Home</a></li>
+      <li class="px-2 py-1 cursor-pointer hover:text-white hover:bg-blue-500 rounded-"><a href="#product">Products</a></li>
+      <li class="px-2 py-1 cursor-pointer hover:text-white hover:bg-blue-500 rounded-"><a href="#great-tea">Great Tea</a></li>
+      <li class="px-2 py-1 cursor-pointer hover:text-white hover:bg-blue-500 rounded-"><a href="#client">Clients</a></li>
+      <li class="px-2 py-1 cursor-pointer hover:text-white hover:bg-blue-500 rounded-"><a href="#news">News</a></li>
+    </ul>
+  </div>
+  <div>
+    <button class="py-3 px-5 rounded-md text-white bg-linear-to-r from-[#FF8938] to-[#FF0000]">LogIn</button>
+  </div>
+ </nav>
+
     <!-- banner -->
     <section
       id="home"
@@ -70,7 +87,7 @@
     </section>
 
     <!-- features -->
-    <section class="container mx-auto my-[50px] md:mt-[100px] lg:mt-[150px]">
+    <section id="product" class="container mx-auto my-[50px] md:mt-[100px] lg:mt-[150px]">
       <div class="max-w-[64%] mx-auto text-center mb-4 bm:mb-8">
         <h2
           class="text-[25px] md:text-[38px] lg:text-[45px] text-[#1C1C1C] font-bold"
@@ -136,7 +153,7 @@
 
     <!-- Great Tea -->
     <section
-      class="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-4 md:mt-[100px] lg:mt-[150px]"
+     id="great-tea" class="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-4 md:mt-[100px] lg:mt-[150px]"
     >
       <div
         class="text-white text-center grid grid-cols-2 grid-rows-3 gap-3 md:gap-7"
@@ -198,7 +215,7 @@
 
     <!-- Meet Our -->
     <section
-      class="flex flex-col lg:flex-row justify-between items-center container mx-auto gap-4 md:mt-[100px] lg:mt-[150px] bg-linear-to-l from-[#FF0000] to-[#FF8938] p-7 md:p-[70px] text-white my-5"
+    id="client"  class="flex flex-col lg:flex-row justify-between items-center container mx-auto gap-4 md:mt-[100px] lg:mt-[150px] bg-linear-to-l from-[#FF0000] to-[#FF8938] p-7 md:p-[70px] text-white my-5"
     >
       <div class="space-y-2 md:space-y-2.5 max-w-[400px]">
         <h2 class="text-[25px] md:text-[38px] lg:text-[45px] font-bold">
@@ -284,7 +301,7 @@
 
     <!-- News & Events -->
 
-    <section class="container mx-auto my-12 md:mt-[100px] lg:mt-[150px]">
+    <section id="news" class="container mx-auto my-12 md:mt-[100px] lg:mt-[150px]">
       <div class="text-center max-w-[901px] space-y-2 mx-auto mb-4">
         <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold">News & Events</h2>
         <p class="text-[#777777]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
@@ -322,7 +339,7 @@
         <div
           class="flex flex-col md:flex-row items-center space-y-3 justify-between"
         >
-          <img src="./images/cup.png" alt="" />
+          <a href="#home-1"><img src="./images/cup.png" alt="" /></a>
           <div class="flex flex-col md:flex-row gap-2 items-center">
             <p>Ready to get strated?</p>
             <button
